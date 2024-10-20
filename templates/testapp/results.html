@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/demo.css' %}">
+</head>
+<body>
+    <h2>Hello {{name}}, thanks for providing your info.</h2>
+    <ul>
+      <li>Name: {{name}}</li>
+      <li>Age: {{age}}</li>
+      <li>GF: {{gf}}</li>
+    </ul>
+    Doublecheck your GF&emsp;<input type="button" class="btn1" onclick="window.history.back()" value="Back">
+</body>
+</html>
